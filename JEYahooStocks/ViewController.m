@@ -7,21 +7,26 @@
 //
 
 #import "ViewController.h"
+#import "JEYahooStocksController.h"
+#import <DRPBase/DRPLogging.h>
 
-@interface ViewController ()
-
-@end
-
-@implementation ViewController
-
-- (void)viewDidLoad {
-  [super viewDidLoad];
-  // Do any additional setup after loading the view, typically from a nib.
+@implementation ViewController {
+  JEYahooStocksController *_stocks;
 }
 
-- (void)didReceiveMemoryWarning {
-  [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
+- (id)initWithCoder:(NSCoder *)aDecoder {
+  self = [super initWithCoder:aDecoder];
+  if (self) {
+    NSDate *lastYear = [NSDate dateWithTimeIntervalSinceNow:-31536000];
+    _stocks = [[JEYahooStocksController alloc] initWithTicker:@"GOOG"
+                                                    startDate:lastYear
+                                                      endDate:[NSDate date]];
+    
+    [_stocks fetchStockPrices:^(NSArray *results) {
+      DRPLogDebug(@"Loaded historical stock prices: %@", results);
+    }];
+  }
+  return self;
 }
 
 @end

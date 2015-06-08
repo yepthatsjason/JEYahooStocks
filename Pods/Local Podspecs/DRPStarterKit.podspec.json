@@ -1,0 +1,51 @@
+{
+  "name": "DRPStarterKit",
+  "version": "1.0.0",
+  "summary": "Collection of iOS classes to jumpstart development of new projects",
+  "description": "                       This pod brings in a common classes that are generic and can be shared among\n                       different iOS apps.\n",
+  "homepage": "https://github.com/yepthatsjason/DRPStarterKit",
+  "license": "MIT",
+  "authors": {
+    "Jason Ederle": "jason@funly.io"
+  },
+  "source": {
+    "git": "https://github.com/yepthatsjason/DRPStarterKit.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "public_header_files": "Pod/Classes/**/*.h",
+  "frameworks": [
+    "UIKit",
+    "MapKit"
+  ],
+  "dependencies": {
+    "GoogleAnalytics-iOS-SDK": [
+
+    ],
+    "APAddressBook": [
+
+    ],
+    "ECPhoneNumberFormatter": [
+
+    ],
+    "MBProgressHUD": [
+
+    ],
+    "GPUImage": [
+
+    ],
+    "SDWebImage": [
+
+    ],
+    "AFNetworking": [
+
+    ],
+    "DRPBase": [
+
+    ]
+  }
+}
