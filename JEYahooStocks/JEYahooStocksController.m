@@ -57,8 +57,7 @@
   NSMutableArray *formattedQuotes = [NSMutableArray array];
   
   for (NSDictionary *rawQuote in rawQuotes) {
-    NSString *dateStr = rawQuote[@"Date"];
-    JEYahooStockPrice *price = [[JEYahooStockPrice alloc] initWithDate:[dateStr dateFromString]
+    JEYahooStockPrice *price = [[JEYahooStockPrice alloc] initWithDate:[rawQuote[@"Date"] dateFromString]
                                                                  close:[rawQuote[@"Close"] floatValue]
                                                               adjClose:[rawQuote[@"Adj_Close"] floatValue]
                                                                   high:[rawQuote[@"High"] floatValue]
