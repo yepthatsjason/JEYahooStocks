@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "JEYahooStocksController.h"
 #import <DRPBase/DRPLogging.h>
+#import "JEYahooStockPrice.h"
 
 @implementation ViewController {
   JEYahooStocksController *_stocks;
@@ -23,7 +24,16 @@
                                                       endDate:[NSDate date]];
     
     [_stocks fetchStockPrices:^(NSArray *results) {
+      if (!results.count) {
+        DRPLogError(@"Failed to load stock data");
+        return;
+      }
+
       DRPLogDebug(@"Loaded historical stock prices: %@", results);
+
+      JEYahooStockPrice *price = results.firstObject;
+
+      _lastPriceLabel.text = [NSString stringWithFormat:@"$%f", price.close];
     }];
   }
   return self;
