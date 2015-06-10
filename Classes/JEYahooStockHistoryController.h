@@ -1,5 +1,5 @@
 //
-//  JEYahooStocksController.h
+//  JEYahooStockHistoryController.h
 //  JEYahooStocks
 //
 //  Created by Jason Ederle on 6/7/15.
@@ -10,7 +10,7 @@
 
 typedef void (^stock_results_handler)(NSArray *results);
 
-@interface JEYahooStocksController : NSObject
+@interface JEYahooStockHistoryController : NSObject
 
 - (instancetype)initWithTicker:(NSString *)ticker
                      startDate:(NSDate *)startDate

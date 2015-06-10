@@ -1,19 +1,19 @@
 //
-//  JEYahooStocksController.m
+//  JEYahooStockHistoryController.m
 //  JEYahooStocks
 //
 //  Created by Jason Ederle on 6/7/15.
 //  Copyright (c) 2015 Funly, Inc. All rights reserved.
 //
 
-#import "JEYahooStocksController.h"
+#import "JEYahooStockHistoryController.h"
 #import "YQL.h"
 #import "NSDate+YQL.h"
 #import "NSString+YQL.h"
 #import <DRPBase/DRPLogging.h>
 #import "JEYahooStockPrice.h"
 
-@implementation JEYahooStocksController {
+@implementation JEYahooStockHistoryController {
   NSString *_ticker;
   NSDate *_startDate;
   NSDate *_endDate;

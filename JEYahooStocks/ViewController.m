@@ -7,23 +7,25 @@
 //
 
 #import "ViewController.h"
-#import "JEYahooStocksController.h"
+#import "JEYahooStockHistoryController.h"
+#import "JEYahooStockTickerController.h"
 #import <DRPBase/DRPLogging.h>
 #import "JEYahooStockPrice.h"
 
 @implementation ViewController {
-  JEYahooStocksController *_stocks;
+  JEYahooStockHistoryController *_historyController;
+  JEYahooStockTickerController *_tickerController;
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder {
   self = [super initWithCoder:aDecoder];
   if (self) {
     NSDate *lastYear = [NSDate dateWithTimeIntervalSinceNow:-31536000];
-    _stocks = [[JEYahooStocksController alloc] initWithTicker:@"GOOG"
-                                                    startDate:lastYear
-                                                      endDate:[NSDate date]];
+    _historyController = [[JEYahooStockHistoryController alloc] initWithTicker:@"GOOG"
+                                                          startDate:lastYear
+                                                            endDate:[NSDate date]];
     
-    [_stocks fetchStockPrices:^(NSArray *results) {
+    [_historyController fetchStockPrices:^(NSArray *results) {
       if (!results.count) {
         DRPLogError(@"Failed to load stock data");
         return;
@@ -32,8 +34,12 @@
       DRPLogDebug(@"Loaded historical stock prices: %@", results);
 
       JEYahooStockPrice *price = results.firstObject;
+    }];
 
-      _lastPriceLabel.text = [NSString stringWithFormat:@"$%f", price.close];
+    _tickerController = [[JEYahooStockTickerController alloc] initWithSymbol:@"GOOG"];
+    [_tickerController fetchCurrentPrice:^(NSNumber *value) {
+      DRPLogDebug(@"Current ticker value is: %@", value);
+      _lastPriceLabel.text = [NSString stringWithFormat:@"$%d", (int)(1250 * value.floatValue)];
     }];
   }
   return self;

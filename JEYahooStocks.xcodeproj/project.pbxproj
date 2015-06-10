@@ -15,10 +15,11 @@
 		1EDC37C41B2554CA00EB26D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1EDC37C21B2554CA00EB26D9 /* LaunchScreen.xib */; };
 		1EDC37D01B2554CA00EB26D9 /* JEYahooStocksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EDC37CF1B2554CA00EB26D9 /* JEYahooStocksTests.m */; };
 		4432A37D1B289FFF003577B9 /* JEYahooStockPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = 4432A3741B289FFF003577B9 /* JEYahooStockPrice.m */; };
-		4432A37E1B289FFF003577B9 /* JEYahooStocksController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4432A3761B289FFF003577B9 /* JEYahooStocksController.m */; };
+		4432A37E1B289FFF003577B9 /* JEYahooStockHistoryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4432A3761B289FFF003577B9 /* JEYahooStockHistoryController.m */; };
 		4432A37F1B289FFF003577B9 /* NSDate+YQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 4432A3781B289FFF003577B9 /* NSDate+YQL.m */; };
 		4432A3801B289FFF003577B9 /* NSString+YQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 4432A37A1B289FFF003577B9 /* NSString+YQL.m */; };
 		4432A3811B289FFF003577B9 /* YQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 4432A37C1B289FFF003577B9 /* YQL.m */; };
+		44A31D981B28B52C00E54F2F /* JEYahooStockTickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44A31D971B28B52C00E54F2F /* JEYahooStockTickerController.m */; };
 		9370C3D20A47A3AA77AE2715 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D399DCE04234CF235C21984E /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -48,14 +49,16 @@
 		1EDC37CF1B2554CA00EB26D9 /* JEYahooStocksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JEYahooStocksTests.m; sourceTree = "<group>"; };
 		4432A3731B289FFF003577B9 /* JEYahooStockPrice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JEYahooStockPrice.h; path = Classes/JEYahooStockPrice.h; sourceTree = SOURCE_ROOT; };
 		4432A3741B289FFF003577B9 /* JEYahooStockPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JEYahooStockPrice.m; path = Classes/JEYahooStockPrice.m; sourceTree = SOURCE_ROOT; };
-		4432A3751B289FFF003577B9 /* JEYahooStocksController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JEYahooStocksController.h; path = Classes/JEYahooStocksController.h; sourceTree = SOURCE_ROOT; };
-		4432A3761B289FFF003577B9 /* JEYahooStocksController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JEYahooStocksController.m; path = Classes/JEYahooStocksController.m; sourceTree = SOURCE_ROOT; };
+		4432A3751B289FFF003577B9 /* JEYahooStockHistoryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JEYahooStockHistoryController.h; path = Classes/JEYahooStockHistoryController.h; sourceTree = SOURCE_ROOT; };
+		4432A3761B289FFF003577B9 /* JEYahooStockHistoryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JEYahooStockHistoryController.m; path = Classes/JEYahooStockHistoryController.m; sourceTree = SOURCE_ROOT; };
 		4432A3771B289FFF003577B9 /* NSDate+YQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+YQL.h"; path = "Classes/NSDate+YQL.h"; sourceTree = SOURCE_ROOT; };
 		4432A3781B289FFF003577B9 /* NSDate+YQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+YQL.m"; path = "Classes/NSDate+YQL.m"; sourceTree = SOURCE_ROOT; };
 		4432A3791B289FFF003577B9 /* NSString+YQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+YQL.h"; path = "Classes/NSString+YQL.h"; sourceTree = SOURCE_ROOT; };
 		4432A37A1B289FFF003577B9 /* NSString+YQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+YQL.m"; path = "Classes/NSString+YQL.m"; sourceTree = SOURCE_ROOT; };
 		4432A37B1B289FFF003577B9 /* YQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YQL.h; path = Classes/YQL.h; sourceTree = SOURCE_ROOT; };
 		4432A37C1B289FFF003577B9 /* YQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = YQL.m; path = Classes/YQL.m; sourceTree = SOURCE_ROOT; };
+		44A31D961B28B52C00E54F2F /* JEYahooStockTickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JEYahooStockTickerController.h; sourceTree = "<group>"; };
+		44A31D971B28B52C00E54F2F /* JEYahooStockTickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JEYahooStockTickerController.m; sourceTree = "<group>"; };
 		68AF55C2A00B4711E5992129 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D399DCE04234CF235C21984E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF6659D052EAAD8090DB6EC /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,8 +159,10 @@
 			children = (
 				4432A3731B289FFF003577B9 /* JEYahooStockPrice.h */,
 				4432A3741B289FFF003577B9 /* JEYahooStockPrice.m */,
-				4432A3751B289FFF003577B9 /* JEYahooStocksController.h */,
-				4432A3761B289FFF003577B9 /* JEYahooStocksController.m */,
+				4432A3751B289FFF003577B9 /* JEYahooStockHistoryController.h */,
+				4432A3761B289FFF003577B9 /* JEYahooStockHistoryController.m */,
+				44A31D961B28B52C00E54F2F /* JEYahooStockTickerController.h */,
+				44A31D971B28B52C00E54F2F /* JEYahooStockTickerController.m */,
 				4432A3771B289FFF003577B9 /* NSDate+YQL.h */,
 				4432A3781B289FFF003577B9 /* NSDate+YQL.m */,
 				4432A3791B289FFF003577B9 /* NSString+YQL.h */,
@@ -313,8 +318,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4432A37D1B289FFF003577B9 /* JEYahooStockPrice.m in Sources */,
+				44A31D981B28B52C00E54F2F /* JEYahooStockTickerController.m in Sources */,
 				1EDC37BC1B2554CA00EB26D9 /* ViewController.m in Sources */,
-				4432A37E1B289FFF003577B9 /* JEYahooStocksController.m in Sources */,
+				4432A37E1B289FFF003577B9 /* JEYahooStockHistoryController.m in Sources */,
 				4432A3801B289FFF003577B9 /* NSString+YQL.m in Sources */,
 				4432A37F1B289FFF003577B9 /* NSDate+YQL.m in Sources */,
 				1EDC37B91B2554CA00EB26D9 /* AppDelegate.m in Sources */,
